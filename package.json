@@ -1,0 +1,45 @@
+{
+  "name": "booking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "predev": "npm run build",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "build": "concurrently \"rimraf dist\" \"npx tsc\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.12.1",
+    "apitoolkit-express": "^2.2.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "graphql": "^16.8.1",
+    "graphql-http": "^1.22.0",
+    "graphql-playground-middleware-express": "^1.7.23",
+    "jsonwebtoken": "^9.0.2",
+    "redis": "^4.6.13",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/graphql": "^14.5.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.6",
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22",
+    "prisma": "^5.5.2",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.3"
+  }
+}
