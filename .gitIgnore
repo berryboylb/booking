@@ -6,3 +6,4 @@ package-lock.json
 yarn-error.log
 /mongodb-data
 /redis/dump.rdb
+/deploy.sh
