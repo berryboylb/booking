@@ -1,6 +1,6 @@
 # Booking
 
-simple booking with graphql
+Booking is a simple app built on top of express and graphQL, to allow people create services,schedules and book services easily.
 
 
 ## Setup Locally
